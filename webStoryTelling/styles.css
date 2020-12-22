@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: #FFFFB7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #D5F5E3;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.nav {
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.nav-obj {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-index {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-function {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-index-item, .nav-function-item {
+  padding: 1px 10px 0 0;
+}
+
+.article-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+
+.avatar {
+  padding: 0 10px 0 0;
+  /*width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;*/
+}
+
+.biography {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal {
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  list-style: circle;
+  margin-left: 5px;
+}
+
+a:hover {
+  color: Blue;
+}
+
+.post-container {
+  background-color: #C0C0C0;
+  padding: 0px;
+}
+
+.post {
+  background-color: #C0C0C0;
+  width: 900px;
+  padding: 20px;
+}
+
+.post-content {
+  padding: 10px 0;
+}
+
+.footer-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 900px;
+}
+
+img {
+  border-radius: 50px 50px 50px 50px;
+}
+
+.list-interest {}
+
+.list-school {}
