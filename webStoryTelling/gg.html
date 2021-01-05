@@ -31,14 +31,14 @@
       .then((res) => res.json())
       .then(text => {
         const ele = document.getElementById('f9b24a0d4668f1e6e340');
-        ele.textContent = text;
+        ele.textContent = JSON.stringify(text);
       })
 
     fetch('/webStoryTelling/gg_files/json/ac06e9f2cff7438aa49c.json')
     .then((res) => res.json())
     .then(text => {
       const ele = document.getElementById('ac06e9f2cff7438aa49c');
-      ele.textContent = text;
+      ele.textContent = JSON.stringify(text);
     })
 
 </script>
