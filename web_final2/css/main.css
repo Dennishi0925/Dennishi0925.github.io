@@ -4,6 +4,100 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: roboto, noto sans tc, sans-serif;
+  background-color: #f4f4f4;
+  /*overflow-x: hidden;*/
+}
+
+.opening.part01 {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  position: relative;
+}
+
+video.part01 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+h1.part01 {
+  font-size: 70px;
+  margin: 16px auto 0;
+  line-height: 1.2;
+}
+
+h2.part01 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  background-color: #4FDB80;
+  padding: 7px 16px 6px 18px;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+  color: #000;
+  opacity: 0.6;
+}
+
+h3.part01 {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 6px auto 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  width: auto;
+  color: #4d4d4d;
+}
+
+h4.part01 {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 6px auto 0;
+  background-color: #ffffff;
+  width: auto;
+  opacity: 0.8;
+}
+
+.title-block.part01 {
+  margin: 0 auto 15%;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.mid-text {
+  margin: 0 auto 15%;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+}
+
+.good-text {
+  margin: 20px;
+  padding: 2px;
+  font-size: 18px;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #272727;
+  font-weight: 400;
+}
+
 .text-over-video {
   position: absolute;
   top: 50%;
@@ -30,11 +124,34 @@ div.transbox h1, h2, h4 {
   color: #000000;
 }
 
+.meta.partlast {
+  width: 100%;
+  background-color: #d3d3d3;
+  padding: 60px 15px;
+}
+
+.meta.partlast .content.partlast {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  white-space: pre-wrap;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+}
+
 .big-title {
   border: 2px;
   background: rgb(204, 204, 204);
   /* Fallback for older browsers without RGBA-support */
   background: rgba(204, 204, 204, 0.5);
+}
+
+.part02 {
+  min-height: 100%;
+  width: 100%;
+  background-color: #eee;
+  position: relative;
 }
 
 .sub-title {
@@ -66,6 +183,20 @@ div.transbox h1, h2, h4 {
   height: 20vh;
   width: 200vh;
   padding: 6vh;
+}
+
+.mid-text {
+  font-size: 18px;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #272727;
+  font-weight: 400;
+  background-color: #F4F4F4;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .text-empty {
