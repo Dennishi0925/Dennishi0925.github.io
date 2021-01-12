@@ -95,7 +95,10 @@ h4.part01 {
 }
 
 .good-text {
-  padding: 2px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
@@ -219,7 +222,6 @@ div.transbox h1, h2, h4, h5 {
 
 .mid-text-long-analysis {
   font-size: 18px;
-  white-space: pre-wrap;
   line-height: 1.8;
   color: #272727;
   font-weight: 400;
@@ -237,8 +239,32 @@ div.transbox h1, h2, h4, h5 {
   font-weight: 400;
   background-color: #F4F4F4;
   display: block;
-  margin-left: 200px;
-  margin-right: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.left-right {
+  overflow: hidden;
+}
+
+.left-item {
+  float: left;
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 500px;
+  width: 31%;
+}
+
+img {
+  float: right;
+}
+
+.right-item {
+  float: left;
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 500px;
+  width: 61%;
 }
 
 .text-empty {
