@@ -201,31 +201,42 @@
       <p>曾敬德表示，若家中有小朋友、長輩的購屋者，會比較在意綠地作為休憩用的需求，一般小家庭、受薪階級恐難以購買綠地附近住宅。若綠地旁只蓋三房、兩房普通公寓，房價受綠地影響難以下降、公寓的目標客層無法負擔，因此建商最終還是會選擇價格較高的高樓大廈，「購屋人會跟現實妥協，找到平衡」。</p>
     </div>
 
-    <div class="">
-      <iframe seamless src="https://dennishi0925.github.io/webStoryTelling/ggirap_final_ok.html" width="100%" height="500"></iframe>
-    </div>
-
     <div id="htmlwidget_container">
       <div id="htmlwidget-d747295914a251656032" style="width:960px;height:500px;" class="girafe html-widget"></div>
     </div>
 
     <div class="mid-text-long-analysis">
-      <p>在台北市，綠地並非人人唾手可得。但，有沒有住在綠地附近，有差嗎？</p>
+
+      <p><br></p>
+      <p>利用台北市所公開的水綠地圖，資料當中的綠地分布，以及財政部所提供以家戶為單位，各縣市的綜合所得稅的所得總額，再以村里為單位，計算台北市各里的綠地比例與所得中位數，藉此查看兩者關係。</p>
+      <p>擁有高所得和綠地可近性高有關嗎？從上方的分布圖，似乎有這樣的現象。再使用迴歸分析測量兩者關係，係數為正，代表兩者呈現正向關係，且信心水準達到顯著。</p>
+
+      <p><br></p>
+    </div>
+
+    <div class="mid-text-long-analysis">
+      <p>
+        <img src="assets/spatial.png" alt="Pineapple" style="width:362.5px;height:261.5px;margin-left:5px;">另外計算空間分析（Spatial Analysis）上用來檢測空間自相關（Spatial Autocorrelation）的 Moran's I
+        Coeffcient，係數為正，且信心水準達到顯著，發現綠地分布有空間相依性，也就是說，綠地分布是有群聚現象存在。
+      </p>
+      <p>
+        考慮到空間相依性，改利用「空間滯後模型」（Spatial Lag Model，SLM），同樣衡量所得高低對綠地可近性的影響，最後同樣達到顯著，且直接與非直接影響的係數同樣為正。也就是說，確實有綠地分布不均的問題。
+      </p>
+      <p><br></p>
     </div>
 
     <div class="mid-text-long">
-      <p>在台北市，綠地並非人人唾手可得。但，有沒有住在綠地附近，有差嗎？</p>
+      <p>雖然在台北市有綠地不均情形，綠地並非人人唾手可得，且可能有貧富差異。但有沒有住在綠地附近，真的很重要嗎？</p>
     </div>
 
-    <div class="container-fluid;" style="background-image: url(assets/part2bgnew2.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;">
-      <div class="sticky-top">
-        <div class="big-title sticky-top">
-          <h2>世界衛生組織曾指出城市綠地有六大好處</h2>
-        </div>
+
+    <div class="container-fluid" style="background-image: url(assets/part2bgnew.png);
+   background-attachment: fixed;
+   background-position: right;
+   background-repeat: no-repeat;
+   background-size: cover;">
+      <div class="big-title sticky-top">
+        <h2>世界衛生組織曾指出城市綠地有六大好處</h2>
       </div>
 
       <div class="container-fluid" style="background-color: aqua;width:200vh;position:relative;"></div>
@@ -331,8 +342,11 @@
       <div class="container-fluid good-container">
         <p class="good-text">環境文教基金會也要求台北市政府簽署聯合國教科文組織決議支持之國際宣言-地球憲章(Earth Charter)，認同尊重生命理念，並讓臺北市成為全球第一個立法承認樹木權利的首都。</p>
         <p class="good-text">此外，也希望政府承諾每年種5萬棵樹，2030年之前種50萬棵樹，希望2050年可以達到種150萬棵樹的目標。但針對上述呼籲，政府至今卻沒有做出任何回應。</p>
-        <img src="assets/part4.png" style="height:70vh;width:100vh;margin-top:0vh;position:relative;">
+        <img src="assets/part4.png" style="height:49vh;width:70vh;margin-top:0vh;position:relative;">
         <p class="good-text">台北市的綠地不達標準，政府重視程度也有限。然而，綠地卻是改變城市環境、影響居住品質的重要元素，不論是淨化空氣、隔絕噪音，或是串接生態綠廊，都可以大幅提升都市人的生活品質，豐富城市生態。</p>
+        <p><br><br><br><br><br><br></p>
+      </div>
+      <div class="container-fluid good-container">
         <p class="good-text">當越來越多的高樓聳立在城市間，也許我們需要的，由政府對自然綠地的重視，是更多的新鮮空氣，是休閒時刻，所能擁有的綠草如茵。</p>
       </div>
       <div class="meta partlast">
