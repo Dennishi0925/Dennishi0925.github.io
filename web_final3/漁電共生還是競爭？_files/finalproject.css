@@ -1,0 +1,207 @@
+.overlay_title h4 {
+    text-align: right;
+    position: absolute;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    font-size: 65px;
+    color: white;
+    font-weight: 900;
+    top: 0;
+    padding: 17vh 0 0 100px;
+    text-shadow: 2px 2px 30px black;
+}
+
+.overlay_title h6 {
+    text-align: right;
+    position: absolute;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    top: 0;
+    padding: 30vh 0 0 100px;
+    text-shadow: 2px 2px 20px black;
+}
+
+.overlay_title h1 {
+    text-align: right;
+    position: absolute;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    top: 0;
+    padding: 40vh 0 0 100px;
+    text-shadow: 2px 2px 20px black;
+}
+
+.aoverlay {
+    z-index: 5;
+    position: absolute;
+    bottom: 3vh;
+    margin-left: 47vw;
+}
+
+#tofix {
+    top: 0px;
+    padding: 0 0 0 96vw;
+    width: 3vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#chapter {
+    height: 20vh;
+    width: 4vw;
+    background-color: black;
+    position: relative;
+    float: right;
+    left: 97vw;
+    position: sticky;
+    z-index: 999;
+}
+
+.nav {
+    font-size: 14px;
+    height: 20vh;
+    width: 3vw;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    z-index: 1000;
+}
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    border-top: none;
+    height: 20vh;
+    width: 4vw;
+    z-index: 999;
+}
+
+.nav li {
+    margin-bottom: 0px;
+    border-bottom: none;
+    background-color: rgba(1,1,1,0.5);
+    border-left: solid 1px white;
+    list-style-type: none;
+    /*    float: left;*/
+    width: 4vw;
+    height: 20vh;
+    z-index: 99;
+}
+
+.nav li a {
+    padding: 1px 1px;
+    display: block;
+    width: auto;
+    line-height: 3;
+    border-left: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    writing-mode: vertical-lr;
+    height: 20vh;
+    letter-spacing: 3px;
+}
+
+.nav li.first a {
+    border-left: none;
+}
+
+.nav li a:hover {
+    color: #D2AF59;
+    background-color: white;
+    width: 4vw;
+    height: 20vh;
+}
+
+.slideanimate1 {
+    visibility: hidden;
+}
+
+
+.animate1 {
+    animation: slide1 1s 0s forwards;
+}
+
+@keyframes slide1 {
+    from {
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}
+
+
+h1 {
+    font-size: 40px;
+    padding: 40px 0px 10px;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    position: relative;
+    margin-left: 20vw;
+}
+
+h2 {
+    padding: 100px 0px 30px;
+    position: relative;
+    margin-left: 20vw;
+    font-size: 25px;
+    color: white;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    text-shadow: 2px 2px 30px black;
+}
+
+h3 {
+    padding: 50px 10px 50px 20px;
+    position: relative;
+    color: aliceblue;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    text-shadow: 2px 2px 30px black;
+}
+
+h5 {
+    font-size: 50px;
+    line-height: 50vh;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.75;
+    display: block;
+    text-align: left;
+    color: black;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    font-weight: 10;
+    letter-spacing: 0.05em;
+}
+
+p1 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 70vh;
+    margin-left: 10vh;
+    text-shadow: 2px 2px 30px black;
+    font-family: Roboto, "Noto Sans TC", 微軟正黑體, 繁黑體, "Microsoft JhengHei", "Microsoft YaHei", "Heiti TC", "LiHei Pro", PMingLiU;
+    text-align: center;
+    margin-top: 40vh;
+    margin-left: 33vw;
+}
+
+
+#picture {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    min-height: 120vh;
+}
