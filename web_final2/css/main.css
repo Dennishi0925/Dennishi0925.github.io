@@ -51,21 +51,23 @@ h3.part01 {
   font-size: 24px;
   font-weight: 400;
   letter-spacing: 2px;
-  margin: 6px auto 0;
+  padding: 6px;
   background-color: #ffffff;
+  display: inline-block;
   opacity: 0.8;
-  width: auto;
   color: #4d4d4d;
+  margin: 6px auto 0;
 }
 
 h4.part01 {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 2px;
-  margin: 6px auto 0;
+  margin: 12px auto 0;
   background-color: #ffffff;
   width: auto;
   opacity: 0.8;
+  display: inline-block;
 }
 
 .title-block.part01 {
