@@ -5,10 +5,33 @@
   <title>你家旁邊有綠地？尋找台北的樹與綠</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script id="json-d747295914a251656032" type="application/json" data-for="htmlwidget-d747295914a251656032">
+  </script>
+
+  <script>
+    fetch('https://dennishi0925.github.io/webStoryTelling/ggiraph_final.json')
+      .then(res => res.text())
+      .then((text) => {
+        const element = document.getElementById('json-d747295914a251656032');
+        element.textContent = text;
+
+      });
+  </script>
+
+  <script type="application/htmlwidget-sizing" data-for="htmlwidget-d747295914a251656032">
+    {"viewer":{"width":450,"height":350,"padding":15,"fill":true},"browser":{"width":960,"height":500,"padding":40,"fill":false}}
+  </script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/font.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
+
+  <script src="new_files/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+  <script src="new_files/d3-5.7.0/d3.min.js"></script>
+  <script src="new_files/d3-lasso-0.0.5/d3-lasso.min.js"></script>
+  <link href="new_files/ggiraphjs-0.3.0/ggiraphjs.min.css" rel="stylesheet" />
+  <script src="new_files/ggiraphjs-0.3.0/ggiraphjs.min.js"></script>
+  <script src="new_files/girafe-binding-0.7.8/girafe.js"></script>
   <style>
     #div1 {
       background-image: url(assets/airnewpart2kabe.png);
@@ -158,15 +181,16 @@
           <h2>你對家的想像是？</h2>
         </div>
         <div id="div_pt2_01" style="min-height:80vh;background-attachment: fixed;padding:3px; height: auto;">
-          <p></p>
+          <div class="container-fluid" style=" background-size: 100vh 70vh;height:150vh;width:200vh;position:relative;"></div>
         </div>
         <div id="div_pt2_02" style="min-height:80vh;background-attachment: fixed;padding:3px; height: auto;">
-          <p></p>
+          <div class="container-fluid" style=" background-size: 100vh 70vh;height:150vh;width:200vh;position:relative;"></div>
         </div>
       </div>
-      <div id="div_pt2_03" style="min-height:80vh;background-attachment: fixed;padding:3px; height: auto;">
-        <p></p>
+      <div id="div_pt2_03" style="min-height:80vh;background-attachment: fixed;padding:3px;">
+        <div class="container-fluid" style=" background-size: 100vh 70vh;height:180vh;width:200vh;position:relative;"></div>
       </div>
+
       <!--<div style="background-image: url(assets/4icon.svg);min-height:80vh;background-attachment: fixed;padding:3px; height: auto;">
       </div>-->
 
@@ -178,14 +202,26 @@
     </div>
 
     <div class="">
-      <iframe seamless src="https://dennishi0925.github.io/webStoryTelling/gg.html" width="100%" height="500"></iframe>
+      <iframe seamless src="https://dennishi0925.github.io/webStoryTelling/ggirap_final_ok.html" width="100%" height="500"></iframe>
+    </div>
+
+    <div id="htmlwidget_container">
+      <div id="htmlwidget-d747295914a251656032" style="width:960px;height:500px;" class="girafe html-widget"></div>
+    </div>
+
+    <div class="mid-text-long-analysis">
+      <p>在台北市，綠地並非人人唾手可得。但，有沒有住在綠地附近，有差嗎？</p>
     </div>
 
     <div class="mid-text-long">
-      <p>綠地不均等：在台北市，綠地並非人人唾手可得，但，有沒有住在綠地附近，有差嗎？</p>
+      <p>在台北市，綠地並非人人唾手可得。但，有沒有住在綠地附近，有差嗎？</p>
     </div>
 
-    <div class="container-fluid;" style="background-image: url(assets/part2bgnew2.png)">
+    <div class="container-fluid;" style="background-image: url(assets/part2bgnew2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
       <div class="sticky-top">
         <div class="big-title sticky-top">
           <h2>世界衛生組織曾指出城市綠地有六大好處</h2>
@@ -206,7 +242,7 @@
 
       <div id="div6" class="container-fluid" style="background-size: 100vh 70vh;height:100vh;width:200vh;position:relative;"></div>
 
-      <div class="container-fluid" style=" background-size: 50vh 70vh;height:100vh;width:200vh;position:relative;"></div>
+      <div class="container-fluid" style=" background-size: 50vh 70vh;height:30vh;width:200vh;position:relative;"></div>
 
     </div>
     <div class="mid-text-long">
@@ -230,7 +266,12 @@
     <div class="mid-text-long">
       <p>若從另一項重要指標「綠覆率」來看，在台灣的六都裡面，台北市又排第幾名？</p>
     </div>
-    <div class="container-fluid;" style="background-image: url(assets/greenratebackgrand2.png)">
+
+    <div class="container-fluid;" style="background-image: url(assets/greenratebackgrand2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
       <div>
 
         <div class="sticky-top">
@@ -243,7 +284,7 @@
           <div id="div17" class="container-fluid" style="background-size: 115vh 80vh;height:100vh;width:200vh;"> </div>
           <div id="div18" class="container-fluid" style="background-size: 115vh 80vh;height:100vh;width:200vh;">
             <div class="">
-              <div class="transbox" style="margin: 0px; padding: 5px; text-align: center">
+              <div class="transbox2">
                 <h5 style=" z-index: 994">六都之中，唯一達到WHO建議的只有高雄。（資料來源：108年營建統計年報）</h5>
               </div>
             </div>
@@ -261,24 +302,25 @@
     <p>環境文教基金會研究員高思齊指出，政府官方「綠地」定義包含公園、溜冰場等，許多地面其實是水泥鋪地，另外，台北市建蔽率非常高，住宅區基本上是蓋滿的，目前真正「樹冠覆蓋率」只有1.3％。</p>
   </div>
 
-  <div class=" container-fluid;" style="background-image: url(assets/grassend.jpg)">
-
+  <div class="container-fluid;" style="background-image: url(assets/grassend.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
     <div class="">
       <div class="container-fluid big-title">
-        <h1>讓我們更接近綠與自然: 綠地設置與台北願景</h1>
+        <h2>讓我們更接近綠與自然: 綠地設置與台北願景</h2>
       </div>
     </div>
-    <div class="container-fluid;">
-      <div class="container-fluid;" style="margin: 50px; background-color:#d3d3d3" ; opacity:0.8>
-        <p class="good-text">比起其他縣市，台北急需種樹。</p>
-        <p class="good-text">環境文教基金會研究員高思齊認為，台北市為因應新興產業，如共享空間、倉儲等目前無法納入使用分區規劃的項目，希望法規用「列舉例外開放項目的方式」，考慮修改住宅區的土地使用管制。將讓住商更混合，居住品質恐因此快速下降，房價也會持續上升。「若民間沒有壓力的話，政府空地的用途不會優先想到要種樹」。</p>
-        <p class="good-text">除了修改土地使用管制，台北市政府因應氣候變遷所推行的「冷氣政策」讓國小每一班都裝冷氣。</p>
-        <p class="good-text">但高思齊質疑這個政策是否真的「健康」，「種的樹夠多，其實沒有必要開冷氣。」他認為，雖然難以改變全球暖化的趨勢，卻可以透過種樹，改變學校附近的微氣候。</p>
-      </div>
+    <div class="container-fluid good-container">
+      <p class="good-text">比起其他縣市，台北急需種樹。</p>
+      <p class="good-text">環境文教基金會研究員高思齊認為，台北市為因應新興產業，如共享空間、倉儲等目前無法納入使用分區規劃的項目，希望法規用「列舉例外開放項目的方式」，考慮修改住宅區的土地使用管制。將讓住商更混合，居住品質恐因此快速下降，房價也會持續上升。「若民間沒有壓力的話，政府空地的用途不會優先想到要種樹」。</p>
+      <p class="good-text">除了修改土地使用管制，台北市政府因應氣候變遷所推行的「冷氣政策」讓國小每一班都裝冷氣。</p>
+      <p class="good-text">但高思齊質疑這個政策是否真的「健康」，「種的樹夠多，其實沒有必要開冷氣。」他認為，雖然難以改變全球暖化的趨勢，卻可以透過種樹，改變學校附近的微氣候。</p>
     </div>
 
     <div class="container-fluid;">
-      <div class="container-fluid;" style="margin: 50px; background-color:#d3d3d3" ; opacity:0.8>
+      <div class="container-fluid good-container">
         <p class="good-text">環境品質文教基金會在「2020台北樹都」倡議中提出三優先做綠地的地方。首先為公有閒置空地，104年政府清查一萬多筆，面積約55平方公里，其中一成五去種樹，以一公頃一千顆的密度計算（存活率可能4-6成），約可以再種50萬棵。再者為公園預定地，目前尚有6.33平方公里的公園預定地都還沒開放。</p>
         <p class="good-text">若確實執行《公園開發都市設計準則》內部規定，一公頃以上大公園（社區公園十倍以上）要有百分之三十的喬木覆蓋率，可再種1.8平方公里的樹，約11萬顆，是目前台北公園路樹的加倍。最後為加速都更，根據《105新編建物綠化實施規則》，各類建物要有百分之30的綠覆率。</p>
       </div>
@@ -286,11 +328,12 @@
 
     <div class="container-fluid;" style="">
 
-      <div class="container-fluid;" style="margin: 50px; background-color:#d3d3d3" ; opacity:0.8>
+      <div class="container-fluid good-container">
         <p class="good-text">環境文教基金會也要求台北市政府簽署聯合國教科文組織決議支持之國際宣言-地球憲章(Earth Charter)，認同尊重生命理念，並讓臺北市成為全球第一個立法承認樹木權利的首都。</p>
         <p class="good-text">此外，也希望政府承諾每年種5萬棵樹，2030年之前種50萬棵樹，希望2050年可以達到種150萬棵樹的目標。但針對上述呼籲，政府至今卻沒有做出任何回應。</p>
         <img src="assets/part4.png" style="height:70vh;width:100vh;margin-top:0vh;position:relative;">
         <p class="good-text">台北市的綠地不達標準，政府重視程度也有限。然而，綠地卻是改變城市環境、影響居住品質的重要元素，不論是淨化空氣、隔絕噪音，或是串接生態綠廊，都可以大幅提升都市人的生活品質，豐富城市生態。</p>
+        <p class="good-text">當越來越多的高樓聳立在城市間，也許我們需要的，由政府對自然綠地的重視，是更多的新鮮空氣，是休閒時刻，所能擁有的綠草如茵。</p>
       </div>
       <div class="meta partlast">
         <div class="content partlast">
@@ -302,7 +345,7 @@
           美術／何嘉燕
           數據分析／曾子軒
           發布時間：2020.01.12
-          最後更新時間：2020.01.12</div>
+          最後更新時間：2020.01.13</div>
       </div>
     </div>
   </div>
