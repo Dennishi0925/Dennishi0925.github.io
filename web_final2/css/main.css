@@ -88,13 +88,16 @@ h4.part01 {
   text-align: center;
 }
 
+.good-container {
+  margin: 0 auto 15%;
+  max-width: 1200px;
+  background-color: rgba(232, 236, 241, 0.8);
+}
+
 .good-text {
-  margin: 20px;
   padding: 2px;
   font-size: 18px;
-  white-space: pre-wrap;
   line-height: 1.8;
-  color: #272727;
   font-weight: 400;
 }
 
@@ -110,6 +113,19 @@ div.biggest-title {
   border: 2px solid black;
 }
 
+div.transbox2 {
+  width: 500px;
+  background-color: rgba(232, 236, 241, 0.3);
+  border: 1px solid black;
+  text-align: center
+}
+
+div.transbox2 h1, h2, h4, h5 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
 div.transbox {
   margin: 2px;
   width: 500px;
@@ -118,7 +134,7 @@ div.transbox {
   opacity: 0.6;
 }
 
-div.transbox h1, h2, h4 {
+div.transbox h1, h2, h4, h5 {
   margin: 5%;
   font-weight: bold;
   color: #000000;
@@ -126,8 +142,9 @@ div.transbox h1, h2, h4 {
 
 .meta.partlast {
   width: 100%;
-  background-color: #d3d3d3;
+  background-color: rgba(242, 241, 239, 0.9);
   padding: 60px 15px;
+  font-weight: 400;
 }
 
 .meta.partlast .content.partlast {
@@ -135,15 +152,16 @@ div.transbox h1, h2, h4 {
   max-width: 600px;
   margin: auto;
   white-space: pre-wrap;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.8;
   text-align: center;
+  font-weight: 400;
 }
 
 .big-title {
   background: rgb(204, 204, 204);
   /* Fallback for older browsers without RGBA-support */
-  background: rgba(204, 204, 204, 0.5);
+  background: rgba(232, 236, 241, 0.3);
   line-height: 1.8;
   color: #272727;
   font-weight: 400;
@@ -197,6 +215,18 @@ div.transbox h1, h2, h4 {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+.mid-text-long-analysis {
+  font-size: 18px;
+  white-space: pre-wrap;
+  line-height: 1.8;
+  color: #272727;
+  font-weight: 400;
+  background-color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+  display: block;
 }
 
 .mid-text-long {
