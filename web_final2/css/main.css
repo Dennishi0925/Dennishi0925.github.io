@@ -141,10 +141,17 @@ div.transbox h1, h2, h4 {
 }
 
 .big-title {
-  border: 2px;
   background: rgb(204, 204, 204);
   /* Fallback for older browsers without RGBA-support */
   background: rgba(204, 204, 204, 0.5);
+  line-height: 1.8;
+  color: #272727;
+  font-weight: 400;
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .part02 {
@@ -186,6 +193,13 @@ div.transbox h1, h2, h4 {
 }
 
 .mid-text {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.mid-text-long {
   font-size: 18px;
   white-space: pre-wrap;
   line-height: 1.8;
@@ -193,10 +207,8 @@ div.transbox h1, h2, h4 {
   font-weight: 400;
   background-color: #F4F4F4;
   display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 .text-empty {
