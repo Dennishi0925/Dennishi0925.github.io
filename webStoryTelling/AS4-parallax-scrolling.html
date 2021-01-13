@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://p4css.github.io/webScroll/12_4_animate_storytelling4.html -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Parallax vertical</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./AS4-parallax-scrolling_files/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="./AS4-parallax-scrolling_files/shadow.css">
+
+
+  <style>
+    #div1 {
+      background-image: url("./AS4-parallax-scrolling_files/rainforest.jpg");
+    }
+
+    #div2 {
+      background-image: url("./AS4-parallax-scrolling_files/forest.jpg");
+    }
+
+    #div3 {
+      background-image: url("./AS4-parallax-scrolling_files/rainforest.jpeg");
+    }
+
+
+    #div1,
+    #div2,
+    #div3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+  <script src="./AS4-parallax-scrolling_files/jquery-3.2.1.js.下載"></script>
+  <script src="./AS4-parallax-scrolling_files/popper.min.js.下載" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="./AS4-parallax-scrolling_files/bootstrap.min.js.下載" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+  <style shopback-extension-v6-2-1="" data-styled-version="4.2.0"></style>
+</head>
+
+<body class="vsc-initialized">
+  <div class="container-fluid" style="background-color:black;height:100vh;">
+  </div>
+  <div id="div1" class="container-fluid innershadow1" style="background-color:black;height:200vh;position:relative;">
+    <img class="scrollable dropshadow1" data-top="0" data-top2="70" data-left="25" data-left2="35" data-width="20" data-width2="30" src="./AS4-parallax-scrolling_files/cute_bear.png"
+      style="position: absolute; width: 11%; top: 13%; left: 28%; filter: grayscale(0.3) blur(0px);">
+    <img class="scrollable dropshadow1" data-top="20" data-top2="80" data-left="50" data-left2="40" data-width="30" data-width2="40" src="./AS4-parallax-scrolling_files/polarbear.png" style="position: absolute; width: 32%; top: 13%; left: 72%;">
+
+  </div>
+  <div class="container-fluid" style="background-color:rgba(0,0,0,0.5);min-height: 1800px"></div>
+  <div id="div2" class="container-fluid innershadow1" style="background-color:black;height:200vh;position:relative;">
+    <img class="scrollable dropshadow1" data-top="0" data-top2="65" data-left="0" data-left2="45" data-width="20" data-width2="30" src="./AS4-parallax-scrolling_files/bear_medium.png"
+      style="position: absolute; width: 21%; top: 50%; left: 55%; filter: grayscale(0.3) blur(0px);">
+    <img class="scrollable dropshadow1" data-top="15" data-top2="80" data-left="15" data-left2="50" data-width="30" data-width2="40" src="./AS4-parallax-scrolling_files/polarbear_medium.png"
+      style="position: absolute; width: 35%; top: 66%; left: 40%;">
+  </div>
+
+
+  <div class="container-fluid" style="background-color:darkgrey;min-height: 1800px"></div>
+
+  <div id="div3" class="container-fluid innershadow1" style="background-color:black;height:200vh;position:relative;">
+    <img class="scrollable dropshadow1" data-left="0" data-left2="60" src="./AS4-parallax-scrolling_files/real_bear.png" style="position: absolute; width: 20%; top: 50%; left: 60.8794%;">
+    <img class="scrollable dropshadow1" data-left="50" data-left2="30" src="./AS4-parallax-scrolling_files/real_polarbear.png" style="position: absolute; width: 30%; top: 50%; left: 29.3405%;">
+  </div>
+
+
+  <div class="container-fluid" style="background-color:darkgrey;min-height: 1800px"></div>
+
+  <div class="container-fluid" style="background-color:darkgrey;min-height: 1800px"></div>
+
+
+
+  <script>
+    $(document).ready(function() {
+      var winh = $(window).height();
+      $(window).scroll(function() {
+        var scrolled = $(window).scrollTop();
+        $(".scrollable").each(function() {
+          var parent_pos = $(this).parent().offset().top;
+          var next_pos = $(this).parent().next().offset().top;
+          var parent_height = $(this).parent().height();
+          var parent_scrolled = scrolled - $(this).parent().offset().top;
+          if (parent_scrolled > 0 && scrolled < next_pos - winh) {
+
+            if ($(this).attr("data-left")) {
+              $(this).css('left', (($(this).data('left2') - $(this).data('left')) * parent_scrolled / winh + $(this).data('left')) + '%');
+            }
+            if ($(this).attr("data-top")) {
+              $(this).css('top', (($(this).data('top2') - $(this).data('top')) * parent_scrolled / winh + $(this).data('top')) + '%');
+            }
+            if ($(this).attr("data-width")) {
+              $(this).css('width', (($(this).data('width2') - $(this).data('width')) * parent_scrolled / winh + $(this).data('width')) + '%');
+            }
+          }
+        });
+      }); //end of win scroll
+    });
+  </script>
+
+
+</body>
+
+</html>
